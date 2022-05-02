@@ -1,0 +1,20 @@
+﻿@model  IEnumerable<DataConnection_DBfirst.employee>
+    
+
+
+<h2 style="color:crimson">Employee Details</h2>
+<table class="table table-bordered">
+    <tr style="background-color:aqua">
+        <th>Emp_no</th>
+        <th>Emp_Name</th>
+        <th>Emp_Salary</th>
+    </tr>
+
+    @foreach (var data in Model)
+    {<tr>
+        <td> @data.empNo</td>
+        <td>@data.empName</td>
+        <td>@data.empSal</td>
+    </tr>
+    }
+</table>
